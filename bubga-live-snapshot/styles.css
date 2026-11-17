@@ -1231,3 +1231,27 @@ details p { animation: detailsOpen .28s ease both; }
   .blog-footer { display: block; }
   .blog-footer p { margin-top: 12px; }
 }
+
+
+/* Landing card alignment: shared desktop rhythm for headings, copy and CTAs. */
+@media (min-width: 821px) {
+  .landing-page .choice-card {
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto minmax(4.45em, auto) auto;
+    align-content: stretch;
+  }
+
+  .landing-page .choice-card h1 {
+    margin: 0 0 22px;
+    align-self: end;
+  }
+
+  .landing-page .choice-card p {
+    min-height: 4.45em;
+    margin: 0 0 28px;
+  }
+
+  .landing-page .choice-card strong {
+    align-self: start;
+  }
+}
